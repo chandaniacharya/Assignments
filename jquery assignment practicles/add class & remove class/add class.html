@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("h1:first").addClass("intro");
+  });
+});
+</script>
+<style>
+.intro {
+  font-size: 150%;
+  color: darkred;
+}
+</style>
+<body>
+    <h1>This is a heading</h1>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+<button>Add a class name to the first p element</button>
+</body>
+</html>
