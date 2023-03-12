@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="show-content">Show Content</button>
+<p class="content">Element 1</p>
+<p class="content">Element 2</p>
+<p class="content">Element 3</p>
+
+<script>
+    const contentElements = document.querySelectorAll('.content');
+const showButton = document.getElementById('show-content');
+
+contentElements.forEach(element => {
+  element.addEventListener('click', () => {
+    alert(`You clicked on ${element.textContent}`);
+  });
+});
+
+showButton.addEventListener('click', () => {
+  contentElements.forEach(element => {
+    alert(element.textContent);
+  });
+});
+
+</script>
+</body>
+</html>
